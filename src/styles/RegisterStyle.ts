@@ -10,10 +10,11 @@ const styles = StyleSheet.create({
         marginTop: 22
     },
 
+
     containerLabel: {
-    
+     left: 2,
      fontSize: 16,
-     right: 120,
+     
      fontWeight: 400,
      color: '#666666',
      marginBottom: 10,

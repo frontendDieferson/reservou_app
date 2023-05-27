@@ -40,7 +40,7 @@ const RegisterScreen = () => {
           })
           .then(() => {
             Alert.alert("Sucesso!", "Registro realizado com sucesso.");
-            navigation.navigate("Login")
+            navigation.navigate("Term")
           })
           .catch((error) => {
             Alert.alert("Erro!", error.message);
@@ -54,6 +54,7 @@ const RegisterScreen = () => {
   return (
     <View style={styles.container}>
       <Image style={styles.containerLogo} source={require('../assets/images/reservouLogo.png')} />
+      <View>
       <Text style={styles.containerLabel}>Nome</Text>
       <TextInput
         style={styles.containerTextInput}
@@ -94,6 +95,7 @@ const RegisterScreen = () => {
       <TouchableOpacity style={styles.buttonLogin} onPress={handleRegister}>
         <Text>Criar Conta</Text>
       </TouchableOpacity>
+      </View>
     </View>
   );
 };
