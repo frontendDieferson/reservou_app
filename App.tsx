@@ -7,6 +7,7 @@ import firebaseConfig from './firebaseConfig'
 import  { getAuth, signInWithEmailAndPassword } from 'firebase/auth'
 import AppNavigator from './src/navigation/AppNavigator';
 
+
 firebase.initializeApp(firebaseConfig)
 
 const App = () => {

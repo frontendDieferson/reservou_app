@@ -28,7 +28,7 @@ Com este projeto, é possível aprender a construir uma tela de login e registro
 ## Instalação
 
 1. Clone o repositório: `git clone https://github.com/frontendDieferson/reservou_app.git`
-2. Entre na pasta do projeto: `cd seu-projeto`
+2. Entre na pasta do projeto: `cd reservou_app`
 3. Instale as dependências: `npm install` ou `yarn install`
 
 
