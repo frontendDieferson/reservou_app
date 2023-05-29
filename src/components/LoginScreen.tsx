@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import { View, Text, TextInput, Alert, Image, TouchableOpacity } from 'react-native'
+import { View, Text, TextInput, Alert, Image, TouchableOpacity, KeyboardAvoidingView, Platform } from 'react-native'
 import firebaseConfig from 'firebase/compat'
 import 'firebase/compat/auth'
 import styles from "../styles/LoginStyle";
@@ -34,6 +34,8 @@ const LoginScreen = () => {
     
 
     return (
+       
+
         <View style={styles.container}>
             <Image style={styles.containerLogo} source={reservouLogo} />
            
@@ -54,9 +56,12 @@ const LoginScreen = () => {
             onChangeText={(text) => setPassword(text)}
             />
             <View style={styles.content}>
-            <Text>Esqueceu sua senha?  
-                <TouchableOpacity><Text>Clique aqui</Text>
-                </TouchableOpacity></Text>
+            <View style={{ flexDirection: 'row' }}>
+            <Text>Esqueceu sua senha?</Text>
+                <TouchableOpacity>
+                    <Text style={{ left: 8, color: '#E1B12C', borderBottomWidth: 1, borderColor: '#E1B12C'}}>Clique aqui</Text>
+                </TouchableOpacity>
+            </View>
            
            
          
